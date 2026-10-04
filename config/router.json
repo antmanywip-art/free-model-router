@@ -1,0 +1,100 @@
+{
+  "version": 1,
+  "timeout_seconds": 90,
+  "max_attempts": 3,
+  "max_parallel": 2,
+  "max_request_bytes": 524288,
+  "max_response_bytes": 4000000,
+  "clients": [
+    {
+      "id": "magi",
+      "key_env": "ROUTER_MAGI_KEY",
+      "requests_per_minute": 12,
+      "requests_per_day": 100,
+      "max_parallel": 2,
+      "allowed_models": [
+        "magi-a",
+        "magi-b",
+        "best-general"
+      ]
+    },
+    {
+      "id": "nara",
+      "key_env": "ROUTER_NARA_KEY",
+      "requests_per_minute": 12,
+      "requests_per_day": 200,
+      "max_parallel": 1,
+      "allowed_models": [
+        "nara-text",
+        "best-general"
+      ]
+    }
+  ],
+  "providers": [
+    {
+      "id": "bai",
+      "base_url": "https://api.b.ai/v1",
+      "key_env": "BAI_API_KEY",
+      "quota_group": "bai-primary",
+      "requests_per_minute": 5,
+      "requests_per_day": 20
+    },
+    {
+      "id": "openrouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "key_env": "OPENROUTER_API_KEY",
+      "quota_group": "openrouter-primary",
+      "requests_per_minute": 5,
+      "requests_per_day": 20
+    },
+    {
+      "id": "gemini",
+      "base_url": "https://generativelanguage.googleapis.com/v1beta/openai",
+      "key_env": "GEMINI_API_KEY",
+      "quota_group": "gemini-primary",
+      "requests_per_minute": 5,
+      "requests_per_day": 20
+    },
+    {
+      "id": "groq",
+      "base_url": "https://api.groq.com/openai/v1",
+      "key_env": "GROQ_API_KEY",
+      "quota_group": "groq-primary",
+      "requests_per_minute": 5,
+      "requests_per_day": 20
+    },
+    {
+      "id": "cerebras",
+      "base_url": "https://api.cerebras.ai/v1",
+      "key_env": "CEREBRAS_API_KEY",
+      "quota_group": "cerebras-primary",
+      "requests_per_minute": 5,
+      "requests_per_day": 20
+    },
+    {
+      "id": "nvidia",
+      "base_url": "https://integrate.api.nvidia.com/v1",
+      "key_env": "NVIDIA_API_KEY",
+      "quota_group": "nvidia-primary",
+      "requests_per_minute": 5,
+      "requests_per_day": 20
+    },
+    {
+      "id": "mistral",
+      "base_url": "https://api.mistral.ai/v1",
+      "key_env": "MISTRAL_API_KEY",
+      "quota_group": "mistral-primary",
+      "requests_per_minute": 5,
+      "requests_per_day": 20
+    }
+  ],
+  "models": [],
+  "aliases": {
+    "best-general": [],
+    "best-coding": [],
+    "best-fast": [],
+    "magi-a": [],
+    "magi-b": [],
+    "nara-text": []
+  }
+}

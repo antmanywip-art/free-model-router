@@ -1,0 +1,96 @@
+{
+  "as_of": "2026-10-04",
+  "evidence_status": "Public documentation fetches blocked by runtime egress proxy (403); no current prices verified. References are investigation targets, not verified price evidence.",
+  "providers": [
+    {
+      "id": "bai",
+      "name": "B.AI",
+      "official_reference": "https://docs.b.ai/llmservice/promotions-and-pricing-notices/",
+      "status": "unverified",
+      "active": false,
+      "transport": "configured",
+      "next_check": "Known key on GCP; current billing unknown. Historical MAGI notes flag GLM and DeepSeek as paid."
+    },
+    {
+      "id": "openrouter",
+      "name": "OpenRouter",
+      "official_reference": "https://openrouter.ai/docs/guides/routing/model-variants/free",
+      "status": "unverified",
+      "active": false,
+      "transport": "configured",
+      "next_check": "Known MAGI integration; key not injected here; exact free route and account conditions needed."
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "official_reference": "https://ai.google.dev/gemini-api/docs/pricing",
+      "status": "unverified",
+      "active": false,
+      "transport": "configured",
+      "next_check": "Known GCP key; past billing incident. Free-tier account/project eligibility must be checked."
+    },
+    {
+      "id": "groq",
+      "name": "GroqCloud",
+      "official_reference": "https://console.groq.com/docs/rate-limits",
+      "status": "unverified",
+      "active": false,
+      "transport": "configured",
+      "next_check": "Check free account tier, models, region and rate limits."
+    },
+    {
+      "id": "cerebras",
+      "name": "Cerebras",
+      "official_reference": "https://inference-docs.cerebras.ai/support/rate-limits",
+      "status": "unverified",
+      "active": false,
+      "transport": "configured",
+      "next_check": "Check account eligibility, free models and JSON support."
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA API Catalog",
+      "official_reference": "https://docs.api.nvidia.com/nim/reference/quickstart",
+      "status": "unverified",
+      "active": false,
+      "transport": "configured",
+      "next_check": "Check trial/credit expiry, model availability and permitted usage."
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "official_reference": "https://docs.mistral.ai/deployment/ai-studio/tier",
+      "status": "unverified",
+      "active": false,
+      "transport": "configured",
+      "next_check": "Check experiment/free tier eligibility and data terms."
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare Workers AI",
+      "official_reference": "https://developers.cloudflare.com/workers-ai/platform/pricing/",
+      "status": "unverified",
+      "active": false,
+      "transport": "adapter_pending",
+      "next_check": "Account-specific endpoint; determine free allowance and hard overage prevention."
+    },
+    {
+      "id": "github",
+      "name": "GitHub Models",
+      "official_reference": "https://docs.github.com/en/github-models/prototyping-with-ai-models",
+      "status": "unverified",
+      "active": false,
+      "transport": "adapter_pending",
+      "next_check": "Check free inference limits and production-use conditions."
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face Inference Providers",
+      "official_reference": "https://huggingface.co/docs/inference-providers/pricing",
+      "status": "unverified",
+      "active": false,
+      "transport": "adapter_pending",
+      "next_check": "Credit-only offers require non-billable exhaustion behavior; do not assume permanent free access."
+    }
+  ]
+}

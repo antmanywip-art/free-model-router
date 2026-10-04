@@ -1,0 +1,23 @@
+{
+  "id": "provider/exact-model",
+  "provider": "groq",
+  "model": "REPLACE_WITH_VERIFIED_MODEL_ID",
+  "family": "REPLACE_WITH_REAL_MODEL_FAMILY",
+  "enabled": false,
+  "capabilities": [
+    "text",
+    "json"
+  ],
+  "context_tokens": 32768,
+  "max_output_tokens": 8192,
+  "free": {
+    "status": "unknown",
+    "kind": "quota",
+    "checked_at": null,
+    "verify_until": null,
+    "expires_at": null,
+    "account_verified": false,
+    "billing_guard": null,
+    "evidence": []
+  }
+}
